@@ -4,9 +4,11 @@ RUN mkdir app
 
 WORKDIR /app
 
-COPY . .
+COPY package.json .
 
 RUN npm i
+
+COPY . .
 
 EXPOSE 3000
 
